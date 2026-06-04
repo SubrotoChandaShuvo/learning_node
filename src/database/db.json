@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 15,
+    "description": "A comfortable wireless mouse with adjustable DPI and long battery life."
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "price": 45,
+    "description": "A durable mechanical keyboard with RGB backlighting and tactile switches."
+  },
+  {
+    "id": 3,
+    "name": "USB-C Hub",
+    "price": 25,
+    "description": "A compact USB-C hub featuring HDMI, USB 3.0, and SD card reader ports."
+  }
+]
