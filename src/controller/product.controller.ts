@@ -1,5 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "http";
 import { readProduct } from "../service/product.service";
+import type { IProduct } from "../types/product.type";
 
 export const productController = (
     req: IncomingMessage,
@@ -23,7 +24,7 @@ export const productController = (
         //     name: "Product 1",
         //     price: 100,
         // };
-        const products = readProduct();
+        const products = readProduct(); // [{},{},{}]
 
         res.writeHead(200, {
             "Content-Type": "application/json",
@@ -36,6 +37,19 @@ export const productController = (
         );
     }
     else if(method === "GET" && id!==null){
+        // Get a single product by id
+        const products = readProduct();
+        const product = products.find((p : IProduct) => p.id === id);
+        // console.log(product);
 
+        res.writeHead(200, {
+            "Content-Type": "application/json",
+        });
+        res.end(
+            JSON.stringify({
+                message: "Product retrieved successfully",
+                data: product,
+            }),
+        );
     }
 };
