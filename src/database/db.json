@@ -16,5 +16,17 @@
     "name": "USB-C Hub",
     "price": 25,
     "description": "A compact USB-C hub featuring HDMI, USB 3.0, and SD card reader ports."
+  },
+  {
+    "id": 1780868187891,
+    "name": "Product test 2",
+    "description": "Product description 2",
+    "price": 1220
+  },
+  {
+    "id": 1780868238754,
+    "name": "Product test 1",
+    "description": "Product description 1",
+    "price": 600
   }
 ]
