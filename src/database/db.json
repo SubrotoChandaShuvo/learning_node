@@ -1,11 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Wireless Mouse",
-    "price": 15,
-    "description": "A comfortable wireless mouse with adjustable DPI and long battery life."
-  },
-  {
     "id": 2,
     "name": "Mechanical Keyboard",
     "price": 45,
